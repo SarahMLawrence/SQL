@@ -1,0 +1,6 @@
+DDL - Data Definition Language
+    * used to create and manipulate the database schema
+
+Start creating database:
+    * CREATE DATABASE IF NOT EXISTS exampledb;
+
