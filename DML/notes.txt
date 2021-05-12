@@ -1,0 +1,4 @@
+DATA MANIPULATION LANGUAGE
+- a subset of SQL that is used to manipulate the content of the database
+
+*it is different to DDL, which is used to manipulate the schema rather than the data
