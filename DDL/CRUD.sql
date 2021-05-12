@@ -1,3 +1,4 @@
+
 -- SHOW DATABASES - used to see how many databases are present on the server
 SHOW DATABASES;
 
@@ -9,19 +10,19 @@ CREATE TABLE Orders
 (
     Order_id INT
     AUTO_INCREMENT, 
-    customer_id INT, 
-    product_id INT, 
-    date_placed DATE NOT NULL, 
-    Quantity INT, 
-    PRIMARY KEY
+        customer_id INT, 
+        product_id INT, 
+        date_placed DATE NOT NULL, 
+        Quantity INT, 
+        PRIMARY KEY
     (Order_id), 
-    FOREIGN KEY
+        FOREIGN KEY
     (customer_id) REFERENCES Customer
     (id), 
-    FOREIGN KEY
+        FOREIGN KEY
     (product_id) REFERENCES Product
     (id)
-);
+    );
 
 
     -- INSERT INTO - used to insert new records in a table
@@ -33,7 +34,7 @@ CREATE TABLE Orders
 
     -- ALTER TABLE - modifies a table definition by altering, adding, or dropping columns and constraints
     ALTER TABLE Orders
-ADD customer_name VARCHAR(100);
+    ADD customer_name VARCHAR(100);
 
 
     -- DESC TABLE - used to describe the list of column definitions in a specified table
