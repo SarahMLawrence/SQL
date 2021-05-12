@@ -1,7 +1,10 @@
+-- SHOW DATABASES - used to see how many databases are present on the server
 SHOW DATABASES;
 
+-- USE db_name - will switch to db_name database
 USE mysql_example;
 
+-- CREATE TABLE - used to create a new table in a database
 CREATE TABLE Orders
 (
     Order_id INT
@@ -20,7 +23,23 @@ CREATE TABLE Orders
     (id)
 );
 
-Insert INTO Orders
-    (customer_id, product_id, date_placed, Quantity)
-VALUES
-    (1, 1, '2021-05-11', '1');
+
+    -- INSERT INTO - used to insert new records in a table
+    Insert INTO Orders
+        (customer_id, product_id, date_placed, Quantity)
+    VALUES
+        (1, 1, '2021-05-11', '1');
+
+
+    -- ALTER TABLE - modifies a table definition by altering, adding, or dropping columns and constraints
+    ALTER TABLE Orders
+ADD customer_name VARCHAR(100);
+
+
+    -- DESC TABLE - used to describe the list of column definitions in a specified table
+    DESC Orders;
+
+
+    -- DROP TABLE - removes one or more table definitions and all data, constraints for those tables
+    DROP TABLE Orders;
+
